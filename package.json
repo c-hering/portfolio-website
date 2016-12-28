@@ -1,0 +1,16 @@
+{
+  "name": "cmh",
+  "version": "1.0.0",
+  "description": "Website Portfolio (reflexive) for myself, Caleb Hering",
+  "main": "app.js",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Caleb Hering",
+  "license": "ISC"
+}

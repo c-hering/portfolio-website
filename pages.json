@@ -1,0 +1,22 @@
+{"pages":[
+    {
+      "id":0,
+      "page":"CMH",
+      "dir":"partials/home.ejs"
+    },
+    {
+      "id":1,
+      "page":"Projects",
+      "dir":"partials/projects.ejs"
+    },
+    {
+      "id":2,
+      "page":"About",
+      "dir":"partials/about.ejs"
+    },
+    {
+      "id":3,
+      "page":"Contact",
+      "dir":"partials/contact.ejs"
+    }
+]}

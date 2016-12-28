@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%= title %></title>
+<link href="https://fonts.googleapis.com/css?family=Nunito|Open+Sans+Condensed:300" rel="stylesheet">
+<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+</head>
+<body id="body">
+  <div id="nav-bar-wrapper">
+    <ul id="nav-bar-list">
+      <% for(var i = 0; i < pages.length; i++){ %>
+      <div class="nav-item-wrapper">
+        <a class="nav-item">
+          <%= pages[i].page %>
+        </a>
+      </div>
+      <% } %>
+    </ul>
+  </div>

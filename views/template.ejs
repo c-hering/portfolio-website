@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/header.ejs %>
+    <div>
+      <div id="bg-image-wrapper">
+        <img id="bg-image" src="images/stars.jpg">
+      </div>
+      <%- include(page) %>
+    </div>
+    <% include partials/scripts.ejs %>
+  </body>
+  <% include partials/footer.ejs %>
+</html>

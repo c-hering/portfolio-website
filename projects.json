@@ -1,0 +1,32 @@
+{"projects":[
+    {
+      "name":"The Black And White",
+      "description":"My schools newspaper website, which I am the webmaster of",
+      "link":"https://www.theblackandwhite.net",
+      "picture":"/public/images/bandw.png"
+    },
+    {
+      "name":"Snatched Daily",
+      "description":"A newspaper website I was hired to help with",
+      "link":"https://www.snatcheddaily.com",
+      "picture":"/public/images/snatched.jpg"
+    },
+    {
+      "name":"Team 1389",
+      "description":"The FRC robotics team that I am on, I help with programming and mechanical work",
+      "link":"https://www.team1389.com",
+      "picture":"/public/images/frc.jpg"
+    },
+    {
+      "name":"Github",
+      "description":"This is just my github, which has most of my programming projects",
+      "link":"https://github.com/c-hering",
+      "picture":"/public/images/github.png"
+    },
+    {
+      "name":"Isolated GS",
+      "description":"This is a game I started working on, yet sadly was stopped, due to school",
+      "link":"https://www.isoloatedgs.weebly.com",
+      "picture":"/public/images/iso.png"
+    }
+]}
