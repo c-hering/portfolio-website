@@ -15,17 +15,7 @@ exports.projects = function(req, res){
   var projects = projectsJSON.projects;
   var page = 'partials/projects';
   res.render('projects', {
-    title:"Projects",
-    projects:projects,
     page:page
-  });
-};
-
-exports.menuBar = function(req, res){
-  var pages = pagesJSON.pages;
-  res.send(console.log(pages));
-  res.render('header', {
-    pages: pages
   });
 };
 

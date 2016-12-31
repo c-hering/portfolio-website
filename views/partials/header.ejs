@@ -8,12 +8,23 @@
 <body id="body">
   <div id="nav-bar-wrapper">
     <ul id="nav-bar-list">
-      <% for(var i = 0; i < pages.length; i++){ %>
+      <div class="nav-item-wrapper" id="cmh-wrapper">
+        <a class="nav-item" id="cmh" href="#">C M H</a>
+      </div>
       <div class="nav-item-wrapper">
-        <a class="nav-item">
-          <%= pages[i].page %>
+        <a class="nav-item" href="#">
+          Projects
         </a>
       </div>
-      <% } %>
+      <div class="nav-item-wrapper">
+        <a class="nav-item" href="#">
+          About
+        </a>
+      </div>
+      <div class="nav-item-wrapper">
+        <a class="nav-item" href="#">
+          Contact
+        </a>
+      </div>
     </ul>
   </div>

@@ -8,7 +8,6 @@ app.use(express.static('public/'));
 
 app.get('/', routes.template);
 app.get('/projects', routes.projects);
-app.get('*', routes.menuBar);
 app.get('*', routes.notFound)
 
 app.listen(3000, function(){

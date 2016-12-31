@@ -9,16 +9,46 @@ _____                           _
  */
 #body{
   font-family: 'Nunito', sans-serif;
-  background-color: black;
+  background-image: url('../images/stars.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
 }
-#bg-image{
-  position:fixed ;
-  top:0;
-  width:100%;
-  z-index:-10;
-  height:100%;
-  background-size: calc(100% + 50px);
+/*
+___  ___ _____ _   _ _   _       ______  ___  ______
+|  \/  ||  ___| \ | | | | |      | ___ \/ _ \ | ___ \
+| .  . || |__ |  \| | | | |______| |_/ / /_\ \| |_/ /
+| |\/| ||  __|| . ` | | | |______| ___ \  _  ||    /
+| |  | || |___| |\  | |_| |      | |_/ / | | || |\ \
+\_|  |_/\____/\_| \_/\___/       \____/\_| |_/\_| \_|
+
+*/
+#cmh{
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  font-weight: bolder;
+  text-align: center;
+  padding-left: 0px;
+}
+#nav-bar-wrapper{
+  width: 100%;
+  padding-bottom: 10px;
+}
+#nav-bar-list{
+  display: inline;
+}
+.nav-item-wrapper{
+  text-align: center;
+}
+.nav-item{
+  margin-left: 10px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding-left: 20px;
+  float: left;
 }
 /*
  _   _
@@ -29,8 +59,16 @@ _____                           _
 \_| |_/\___/|_| |_| |_|\___|
 
 */
+#billboard-wrapper{
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
 #billboard{
-  font-size: 400px;
+  margin-top: 14%;
+  margin-bottom: 15%;
+  height: 250px;
+  width: auto;
 }
 /*
 ______          _
