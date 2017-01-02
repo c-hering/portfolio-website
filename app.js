@@ -7,8 +7,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public/'));
 
 app.get('/projects', routes.projects);
-app.get('/', routes.jsonTest);
-app.get('/about', routes.projects);
+app.get('/about', routes.about);
 app.get('/', routes.template);
 app.get('*', routes.notFound)
 
