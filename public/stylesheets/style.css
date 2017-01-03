@@ -31,6 +31,30 @@ _____                           _
     font-size: bolder;
   }
 }
+@-webkit-keyframes image-animation{
+  0%{
+  }
+  25%{
+    width: 220px;
+    height: 220px;
+    border-radius: 110px;
+  }
+  50%{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+  }
+  75%{
+    width: 210px;
+    height: 210px;
+    border-radius: 105px;
+  }
+  100%{
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+  }
+}
 /*
 ___  ___ _____ _   _ _   _       ______  ___  ______
 |  \/  ||  ___| \ | | | | |      | ___ \/ _ \ | ___ \
@@ -94,6 +118,10 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
   width: 250px;
   border-radius: 125px;
 }
+/*#billboard:hover{
+  -webkit-animation-name: image-animation;
+  -webkit-animation-duration: .5s;
+}*/
 /*
 ____________ _____   ___ _____ _____ _____ _____
 | ___ \ ___ \  _  | |_  |  ___/  __ \_   _/  ___|
