@@ -1,13 +1,13 @@
 {"projects":[
     {
       "name":"The Black And White",
-      "description":"My schools newspaper website, which I am the webmaster of",
+      "description":"I am the webmaster of my schools newspaper website",
       "link":"https://www.theblackandwhite.net",
       "picture":"/public/images/bandw.png"
     },
     {
       "name":"Snatched Daily",
-      "description":"A newspaper website I was hired to help with",
+      "description":"A news website I was hired to help with",
       "link":"https://www.snatcheddaily.com",
       "picture":"/public/images/snatched.jpg"
     },
@@ -19,7 +19,7 @@
     },
     {
       "name":"Github",
-      "description":"This is just my github, which has most of my programming projects",
+      "description":"This is just my github, which has most of my smaller programming projects",
       "link":"https://github.com/c-hering",
       "picture":"/public/images/github.png"
     },

@@ -141,6 +141,14 @@ ____________ _____   ___ _____ _____ _____ _____
   background-color: black;
   margin: .71%;
   float: left;
+  text-align: center;
+}
+.project-link{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  float: right;
+  padding-right: 5px;
 }
 /*
 ______          _
