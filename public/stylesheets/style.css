@@ -1,3 +1,4 @@
+
 /*
 _____                           _
 |  __ \                         | |
@@ -144,7 +145,7 @@ ____________ _____   ___ _____ _____ _____ _____
   text-align: center;
 }
 .project-link{
-  color: white;
+  color: currentColor;
   text-decoration: none;
   font-weight: bold;
   float: right;
