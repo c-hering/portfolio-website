@@ -27,9 +27,9 @@ _____                           _
 */
 @-webkit-keyframes menu-item-hover{
   from{
-    font-weight: bold;
+    border-bottom: 2px solid rgba(255,255,255,0);
   }to{
-    font-size: bolder;
+    border-bottom: 2px solid rgba(255,255,255,1);
   }
 }
 @-webkit-keyframes image-animation{
@@ -83,17 +83,17 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
   text-align: center;
 }
 .nav-item{
-  margin-left: 10px;
+  margin-left: 30px;
   font-size: 30px;
   color: white;
   text-decoration: none;
   display: block;
-  padding-left: 20px;
+  /*padding-left: 20px;*/
   float: left;
 }
 .nav-item:hover{
   -webkit-animation-name: menu-item-hover;
-  -webkit-animation-duration: 2.5s;
+  -webkit-animation-duration: 1.5s;
 }
 /*
  _   _
@@ -119,10 +119,6 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
   width: 250px;
   border-radius: 125px;
 }
-/*#billboard:hover{
-  -webkit-animation-name: image-animation;
-  -webkit-animation-duration: .5s;
-}*/
 /*
 ____________ _____   ___ _____ _____ _____ _____
 | ___ \ ___ \  _  | |_  |  ___/  __ \_   _/  ___|
