@@ -25,7 +25,7 @@ exports.projects = function(req, res){
   var page = 'partials/projects';
   res.render('projects', {
     title: 'CMH',
-    projects:obj
+    projects:obj,
   });
 };
 
