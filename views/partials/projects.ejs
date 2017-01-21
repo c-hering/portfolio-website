@@ -1,15 +1,19 @@
 <div class="project-content-wrapper">
-  <div class="project-slideshow-wrapper">
-    
-  </div>
-<div class="projects-container">
-<% for(var i = 0; i < projects.length; i++){ %>
+  <div class="projects-container">
+<!-- <% for(var i = 0; i < projects.length; i++){ %>
   <div class="project-wrapper">
     <img class="project-img" src=<%- projects[i].picture %>>
     <h2 class="project-name"><%- projects[i].name %></h2>
     <p class="project-description"><%- projects[i].description %></p>
     <a class="project-link" href=<%- projects[i].link %>>GOTO &raquo;</a>
   </div>
-<% } %>
-</div>
+<% } %> -->
+    <ul class="image-slider-ul">
+      <% for(var i=0; i < projects.length; i++){ %>
+          <li class="image-slider-li">
+            <img class="image-slider-image" src=<%- projects[i].picture %>>
+          </li>
+      <% } %>
+    </ul>
+  </div>
 </div>

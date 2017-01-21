@@ -128,6 +128,28 @@ ____________ _____   ___ _____ _____ _____ _____
 \_|   \_| \_|\___/\____/\____/ \____/ \_/ \____/
 */
 .project-content-wrapper{
+  width: 100%;
+  text-align: center;
+}
+.projects-container{
+  display: inline-block;
+  height: 620px;
+  overflow: hidden;
+}
+.image-slider-ul{
+  position: relative;
+  list-style: none;
+}
+.image-slider-li{
+  max-width: 100%;
+  float: none;
+}
+.image-slider-image{
+  height: 600px;
+  width: auto;
+}
+
+.project-content-wrapper{
   margin-top: 5%;
   width: 100%;
   /*height: 260px;*/
