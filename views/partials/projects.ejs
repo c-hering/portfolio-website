@@ -9,11 +9,15 @@
   </div>
 <% } %> -->
     <ul class="image-slider-ul">
-      <% for(var i=0; i < projects.length; i++){ %>
+      <!-- <% for(var i=0; i < projects.length; i++){ %> -->
           <li class="image-slider-li">
             <img class="image-slider-image" src=<%- projects[i].picture %>>
           </li>
-      <% } %>
+      <!-- <% } %> -->
     </ul>
   </div>
 </div>
+<script src="./javascript/scripts.js"></script>
+<script>
+  imageSlider(<%- projects %>);
+</script>
