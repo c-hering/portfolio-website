@@ -65,6 +65,10 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
 \_|  |_/\____/\_| \_/\___/       \____/\_| |_/\_| \_|
 
 */
+.nav-item:not(#cmh):hover{
+  -webkit-animation-name: menu-item-hover;
+  -webkit-animation-duration: 1.5s;
+}
 #cmh{
   border-top: 2px solid white;
   border-bottom: 2px solid white;
@@ -90,10 +94,6 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
   display: block;
   /*padding-left: 20px;*/
   float: left;
-}
-.nav-item:hover{
-  -webkit-animation-name: menu-item-hover;
-  -webkit-animation-duration: 1.5s;
 }
 /*
  _   _
