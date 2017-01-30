@@ -35,6 +35,12 @@ exports.about = function(req,res){
   });
 };
 
+exports.contact = function(req,res){
+  res.render('contact', {
+    title: 'CMH'
+  });
+};
+
 exports.notFound = function(req, res){
   res.send("Error 404 Page Not Found");
 };
