@@ -10,7 +10,8 @@ _____                           _
  */
 #body{
   font-family: 'Nunito', sans-serif;
-  background-image: url('../images/stars.jpg');
+  background-image: url('../images/seattle.jpg');
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -67,11 +68,12 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
 */
 .nav-item:not(#cmh):hover{
   -webkit-animation-name: menu-item-hover;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
 }
 #cmh{
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
+  color: #4CD4B0;
+  border-top: 2px solid #4CD4B0;
+  border-bottom: 2px solid #4CD4B0;
   font-weight: bolder;
   text-align: center;
   padding-left: 0px;
@@ -126,6 +128,7 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
   height: 250px;
   width: 250px;
   border-radius: 125px;
+  border: 5 px solid #4CD4B0;
 }
 /*
 ____________ _____   ___ _____ _____ _____ _____
@@ -155,6 +158,8 @@ ____________ _____   ___ _____ _____ _____ _____
 .image-slider-image{
   height: 600px;
   width: auto;
+  border-bottom: 4px solid #4CD4B0;
+  margin-bottom: 10px;
 }
 
 .project-content-wrapper{
@@ -184,6 +189,44 @@ ____________ _____   ___ _____ _____ _____ _____
   height: 100px;
   width: 100px;
   border-radius: 50px;
+}
+
+/*
+  ___  ______  _____ _   _ _____
+ / _ \ | ___ \|  _  | | | |_   _|
+/ /_\ \| |_/ /| | | | | | | | |
+|  _  || ___ \| | | | | | | | |
+| | | || |_/ /\ \_/ / |_| | | |
+\_| |_/\____/  \___/ \___/  \_/
+
+*/
+#profile-pic{
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  width: 200px;
+  height: auto;
+  border-radius: 100px;
+}
+#name-tag-wrapper{
+  width: 100%;
+  margin: none;
+}
+#name-tag{
+  text-align: center;
+  color: #4CD4B0;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+#about-me-text{
+  border-top: 2px solid #4CD4B0;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  margin-top: 8%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 /*
 ______          _
