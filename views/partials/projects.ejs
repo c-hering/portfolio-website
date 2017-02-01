@@ -1,5 +1,4 @@
   <div class="project-content-wrapper">
-  <div class="projects-container">
 <!-- <% for(var i = 0; i < projects.length; i++){ %>
   <div class="project-wrapper">
     <img class="project-img" src=<%- projects[i].picture %>>
@@ -11,11 +10,12 @@
     <ul class="image-slider-ul">
       <% for(var i=0; i < projects.length; i++){ %>
           <li class="image-slider-li">
-            <img class="image-slider-image" src=<%- projects[i].picture %>>
+              <a href=<%- projects[i].link %> target="_blank">
+                <img class="image-slider-image" id=<%- projects[i].i %> src=<%- projects[i].picture %>>
+              </a>
           </li>
           <!-- <script type="text/javascript" src="javascript/imageSlider.js"></script> -->
           <!-- <script lang="javascript">changeImage();</script> -->
       <% } %>
     </ul>
-  </div>
 </div>
