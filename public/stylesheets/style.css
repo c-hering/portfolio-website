@@ -73,10 +73,45 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
 \_|  |_/\____/\_| \_/\___/       \____/\_| |_/\_| \_|
 
 */
-.nav-item:not(#cmh):hover{
+/*.nav-item:not(#cmh):hover{
   -webkit-animation-name: menu-item-hover;
   -webkit-animation-duration: 1s;
+}*/
+.nav-item:not(#cmh)::before,
+.nav-item:not(#cmh)::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
 }
+
+.nav-item:not(#cmh)::before {
+	margin-right: 0;
+	content: "|";
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.nav-item:not(#cmh)::after {
+	margin-left: 0;
+	content: "|";
+	-webkit-transform: translateX(-10px);
+	-moz-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+
+.nav-item:not(#cmh):hover::before,
+.nav-item:not(#cmh):hover::after,
+.nav-item:not(#cmh):focus::before,
+.nav-item:not(#cmh):focus::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
 #cmh{
   color: #4CD4B0;
   border-top: 2px solid #4CD4B0;
@@ -96,12 +131,11 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
   text-align: center;
 }
 .nav-item{
-  margin-left: 30px;
+  margin-left: 10px;
   font-size: 30px;
   color: white;
   text-decoration: none;
   display: block;
-  /*padding-left: 20px;*/
   float: left;
 }
 /*
