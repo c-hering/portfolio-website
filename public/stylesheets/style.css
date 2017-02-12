@@ -247,6 +247,66 @@ ____________ _____   ___ _____ _____ _____ _____
   margin-right: 10%;
 }
 /*
+ _____ _____ _   _ _____ ___  _____ _____
+/  __ \  _  | \ | |_   _/ _ \/  __ \_   _|
+| /  \/ | | |  \| | | |/ /_\ \ /  \/ | |
+| |   | | | | . ` | | ||  _  | |     | |
+| \__/\ \_/ / |\  | | || | | | \__/\ | |
+ \____/\___/\_| \_/ \_/\_| |_/\____/ \_/
+
+*/
+#contact-wrapper{
+  margin-top: 5%;
+  text-align: center;
+  display: block;
+}
+#contact-title{
+  color: #4CD4B0;
+  position: relative;
+}
+#form-background{
+  font-size: 20px;
+  color: #4CD4B0;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: #efefef;
+  border-radius: 5px;
+  display: block;
+  left: 50%;
+  top: 56%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  margin-bottom: 10%;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+}
+.contact-input{
+  font-size: 15px;
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+}
+.contact-input.focus,
+.contact-input:focus{
+  border-bottom: solid 2px #969696;
+}
+#msg-input{
+  position: relative;
+  width: 400px;
+  height: 200px;
+}
+.contact-submit{
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+  background: #ffffff;
+  color: #4CD4B0;
+  box-shadow: 0 3px #c9c9c9;
+}
+/*
 ______          _
 |  ___|        | |
 | |_ ___   ___ | |_ ___ _ __
