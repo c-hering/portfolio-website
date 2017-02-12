@@ -12,6 +12,6 @@ app.get('/contact', routes.contact);
 app.get('/', routes.template);
 app.get('*', routes.notFound)
 
-app.listen(3000, function(){
+app.listen(process.env.PORT || 3000, function(){
   console.log('App runnning on localhost:3000 \n^C on close');
 });
