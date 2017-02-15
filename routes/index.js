@@ -5,10 +5,12 @@ var scripts = require('../public/javascript/scripts.js');
 exports.template = function(req,res){
   var page = 'partials/home';
   var pages = pages;
+  var style = "color:#4CD4B0;border-color:#4CD4B0;";
   res.render('template', {
     title: "CMH",
     billboard: "CMH",
-    page:page
+    page:page,
+    colorstyle: style
   });
 };
 
@@ -23,21 +25,27 @@ exports.snow = function(req,res){
 exports.projects = function(req, res){
   var obj = projectsJSON.projects;
   var page = 'partials/projects';
+  var style = "color:#90C695;border-color:#90C695;";
   res.render('projects', {
     title: 'CMH',
     projects:obj,
+    colorstyle: style
   });
 };
 
 exports.about = function(req,res){
+  var style = "color:#BF55EC;border-color:#BF55EC;";
   res.render('about', {
-    title: 'CMH'
+    title: 'CMH',
+    colorstyle: style
   });
 };
 
 exports.contact = function(req,res){
+  var style = "color:#BF55EC;border-color:#BF55EC;";
   res.render('contact', {
-    title: 'CMH'
+    title: 'CMH',
+    colorstyle: style
   });
 };
 
