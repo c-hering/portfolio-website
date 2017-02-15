@@ -3,9 +3,9 @@
   <h1 id="name-tag">Caleb Hering</h1>
 </div>
 <p id="about-me-text">Hi, I'm Caleb Hering, sometimes also known as <span style="color: #4CD4B0;">'c-hering'</span> or <span style="color: #4CD4B0;">'Toastyyyyy'</span>.
-  I'm a 15yr old developer from Bethesda, Maryland and a sophmore at Walt Whitman Highschool. In the future I hope to study and persue
+  I'm a 15yr old developer from Bethesda, Maryland and a sophomore at Walt Whitman Highschool. In the future I hope to study and pursue
 <span style="color: #4CD4B0;">Computer Science</span>, <span style="color: #4CD4B0;">Cyber Security/Cryptography</span>, <span style="color: #4CD4B0;">Robotics</span>
-and <span style="color: #4CD4B0;">Busines Managment</span>. More specifically than computer science is <span style="color: #4CD4B0;">Machine Learning</span> and <span style="color: #4CD4B0;">Web Development</span>.
+and <span style="color: #4CD4B0;">Business Management</span>. More specifically than computer science is <span style="color: #4CD4B0;">Machine Learning</span> and <span style="color: #4CD4B0;">Web Development</span>.
 <br/><br/>My love for programming/engineering first developed when I watched <span style="color: #4CD4B0;">WarGames</span> for the first time out of many times to come.
 This love grew through stories of my late grandfather, who worked at <span style="color: #4CD4B0;">Bell Labs</span>, and through any books I could find on
 programming. Recently I took a month long class in Cambridge England, with a student at Pembrook College of Cambridge University who was working on <span style="color: #4CD4B0;">Quantum Computers</span>.
@@ -15,13 +15,19 @@ robots with my school FRC team; Team 1389. Then on the side I am working to beco
 
 <a href="https://github.com/c-hering" target="_blank" style="text-decoration: none; color: #4CD4B0;">Github</a>
 </p>
-<script type="text/javascript" src="javascript/scripts.js"></script>
+<script type="text/javascript" src="javascript/ImageSlider.js"></script>
 <script>
-  function checkOverlap(){
-    checkCopyRightOverlap();
+  function checkCopyRightOverlap(){
+    var copyright = document.getElementById('footer-copyright');
+    var text = document.getElementById('about-me-text');
+    if(intersect(copyright), intersect(text)){
+      copyright.style.opacity = 0;
+    }else{
+      copyright.style.opacity = 1;
+    }
   }
   $(document).ready(function(){
-    checkOverlap();
+    checkCopyRightOverlap();
   });
-  window.onscroll = checkOverlap();
+  window.onscroll = checkCopyRightOverlap();
 </script>
