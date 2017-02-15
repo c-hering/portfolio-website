@@ -8,4 +8,20 @@
     </div>
   </body>
   <% include partials/footer.ejs %>
+  <script type="text/javascript" src="javascript/ImageSlider.js"></script>
+  <script>
+    function checkCopyRightOverlap(){
+      var copyright = document.getElementById('footer-copyright');
+      var text = document.getElementById('about-me-text');
+      if(intersect(copyright), intersect(text)){
+        copyright.style.opacity = 0;
+      }else{
+        copyright.style.opacity = 1;
+      }
+    }
+    $(document).ready(function(){
+      checkCopyRightOverlap();
+    });
+    window.onscroll = checkCopyRightOverlap();
+  </script>
 </html>

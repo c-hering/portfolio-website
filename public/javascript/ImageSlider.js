@@ -8,17 +8,17 @@
 //   }
 // }
 
-function getPositions(elem) {
-   var clientRect = elem.getClientRects();
+function getPositions(elm) {
+   var clientRect = elm.getClientRects();
    return [
        [ clientRect.left, clientRect.left + clientRect.width ],
        [ clientRect.top, clientRect.top + clientRect.height ]
    ];
 }
 
-function intersect(elemA, elemB) {
-   var posA = getPositions(elemA),
-       posB = getPositions(elemB),
+function intersect(elmA, elmB) {
+   var posA = getPositions(elmA),
+       posB = getPositions(elmB),
        isOverlap = false;
 
    if (posA[0][0] < posB[0][1] && posA[0][1] > posB[0][0] &&
