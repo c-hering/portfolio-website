@@ -196,6 +196,7 @@ ____________ _____   ___ _____ _____ _____ _____
   height: 350px;
   width: auto;
   border-bottom: 4px solid #462446;
+  border-top: 4px solid #462446;
 }
 #img5{
   margin-bottom: 10%;
