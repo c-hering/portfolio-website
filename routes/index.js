@@ -47,7 +47,7 @@ exports.about = function(req,res){
 };
 
 exports.contact = function(req,res){
-  var style = "color:#BF55EC;border-color:#BF55EC;";
+  var style = "color:#BF4A67;border-color:#BF4A67;";
   var whatpage = "contact";
   res.render('contact', {
     title: 'CMH',
