@@ -4,12 +4,13 @@ var scripts = require('../public/javascript/scripts.js');
 
 exports.template = function(req,res){
   var page = 'partials/home';
-  var pages = pages;
+  var whatpage = "home";
   var style = "color:#4CD4B0;border-color:#4CD4B0;";
   res.render('template', {
     title: "CMH",
     billboard: "CMH",
-    page:page,
+    page: page,
+    whatpage: whatpage,
     colorstyle: style
   });
 };
@@ -25,26 +26,32 @@ exports.snow = function(req,res){
 exports.projects = function(req, res){
   var obj = projectsJSON.projects;
   var page = 'partials/projects';
-  var style = "color:#90C695;border-color:#90C695;";
+  var whatpage = "projects";
+  var style = "color:#462446;border-color:#462446;";
   res.render('projects', {
     title: 'CMH',
-    projects:obj,
+    projects: obj,
+    whatpage: whatpage,
     colorstyle: style
   });
 };
 
 exports.about = function(req,res){
-  var style = "color:#BF55EC;border-color:#BF55EC;";
+  var style = "color:#FFC153;border-color:#FFC153;";
+  var whatpage = "about";
   res.render('about', {
     title: 'CMH',
+    whatpage: whatpage,
     colorstyle: style
   });
 };
 
 exports.contact = function(req,res){
   var style = "color:#BF55EC;border-color:#BF55EC;";
+  var whatpage = "contact";
   res.render('contact', {
     title: 'CMH',
+    whatpage: whatpage,
     colorstyle: style
   });
 };
