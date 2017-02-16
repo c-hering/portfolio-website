@@ -13,6 +13,16 @@ _____                           _
   overflow-y:hidden;
   color: white;
 }
+#preloader-wrapper{
+  z-index: 10001;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background: red;
+}
+
 /*
   ___   _   _ ________  ___  ___ _____ _____ _____ _   _  _____
  / _ \ | \ | |_   _|  \/  | / _ \_   _|_   _|  _  | \ | |/  ___|
