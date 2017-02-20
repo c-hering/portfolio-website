@@ -15,14 +15,6 @@ exports.template = function(req,res){
   });
 };
 
-exports.snow = function(req,res){
-  var d = new Date();
-  var m = d.Month();
-  if(m == 11 || m == 12 || m == 1){
-    //activeate snow effect
-  }
-}
-
 exports.projects = function(req, res){
   var obj = projectsJSON.projects;
   var page = 'partials/projects';
