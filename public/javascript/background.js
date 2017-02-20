@@ -10,10 +10,10 @@ function setBackground(page){
       elm.style.backgroundAttachment = "fixed";
       break;
     case "projects":
-      elm.style.background = "#B05F6D";
+      elm.style.background = "#462446";
       break;
     case "about":
-      elm.style.background = "#EB6B56";
+      elm.style.background = "#47B39D";
       break;
     case "contact":
       elm.style.background = "#3B3C3D";

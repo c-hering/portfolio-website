@@ -14,7 +14,7 @@ _____                           _
   color: white;
 }
 #preloader-wrapper{
-  z-index: 10001;
+  z-index: 100001;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -58,6 +58,14 @@ _____                           _
     width: 250px;
     height: 250px;
     border-radius: 125px;
+  }
+}
+@-webkit-keyframes project-anim{
+  0%{
+  }
+  100%{
+    height: 220px;
+    width: auto;
   }
 }
 /*
@@ -117,6 +125,8 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
 }
 #nav-bar-wrapper{
   width: 100%;
+  height: 5%;
+  /*background-color: rgba(0, 0, 0, 0.3);*/
   padding-bottom: 10px;
 }
 #nav-bar-list{
@@ -190,10 +200,13 @@ ____________ _____   ___ _____ _____ _____ _____
 }
 .image-slider-image{
   float: left;
-  height: 350px;
+  height: 200px;
   width: auto;
-  border-bottom: 4px solid #462446;
-  border-top: 4px solid #462446;
+  border-bottom: 4px solid #B05F6D;
+  border-top: 4px solid #B05F6D;
+}
+.image-slider-image:hover{
+  /*-webkit-animation: project-anim .2s ;*/
 }
 #img5{
   margin-bottom: 10%;

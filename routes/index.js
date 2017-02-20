@@ -27,7 +27,7 @@ exports.projects = function(req, res){
   var obj = projectsJSON.projects;
   var page = 'partials/projects';
   var whatpage = "projects";
-  var style = "color:#462446;border-color:#462446;";
+  var style = "color:#B05F6D;border-color:#B05F6D;";
   res.render('projects', {
     title: 'CMH',
     projects: obj,
