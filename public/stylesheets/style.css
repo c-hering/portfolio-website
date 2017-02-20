@@ -39,12 +39,6 @@ _____                           _
     transform:rotate(360deg);
   }
 }
-@-webkit-keyframes menu-item-hover{
-  from{
-    border-bottom: 2px solid rgba(255,255,255,0);
-  }to{
-    border-bottom: 2px solid rgba(255,255,255,1);
-  }
 }
 @-webkit-keyframes image-animation{
   0%{
@@ -93,6 +87,7 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
 .nav-item:not(#cmh)::before {
 	margin-right: 0;
 	content: "|";
+  -ms-transform: translateX(20px);
 	-webkit-transform: translateX(20px);
 	-moz-transform: translateX(20px);
 	transform: translateX(20px);
@@ -101,6 +96,7 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
 .nav-item:not(#cmh)::after {
 	margin-left: 0;
 	content: "|";
+  -ms-transform: translateX(-10px);
 	-webkit-transform: translateX(-10px);
 	-moz-transform: translateX(-10px);
 	transform: translateX(-10px);
@@ -111,6 +107,7 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
 .nav-item:not(#cmh):focus::before,
 .nav-item:not(#cmh):focus::after {
 	opacity: 1;
+  -ms-transform: translateX(0px);
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
@@ -172,7 +169,7 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
   height: 250px;
   width: 250px;
   border-radius: 125px;
-  border: 5 px solid #4CD4B0;
+  border: 5px solid #4CD4B0;
 }
 /*
 ____________ _____   ___ _____ _____ _____ _____
@@ -225,7 +222,7 @@ ____________ _____   ___ _____ _____ _____ _____
 }
 #name-tag-wrapper{
   width: 100%;
-  margin: none;
+  margin: ;
 }
 #name-tag{
   text-align: center;
@@ -241,10 +238,7 @@ ____________ _____   ___ _____ _____ _____ _____
 }
 #about-me-text{
   border-top: 2px solid #FFC153;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-top: 1%;
-  padding-bottom: 5%;
+  padding: 1% 2% 5% 2%;
   margin-top: 3%;
   margin-left: 10%;
   margin-right: 10%;
