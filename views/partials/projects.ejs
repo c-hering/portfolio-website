@@ -1,21 +1,13 @@
   <div class="project-content-wrapper">
-<!-- <% for(var i = 0; i < projects.length; i++){ %>
-  <div class="project-wrapper">
-    <img class="project-img" src=<%- projects[i].picture %>>
-    <h2 class="project-name"><%- projects[i].name %></h2>
-    <p class="project-description"><%- projects[i].description %></p>
-    <a class="project-link" href=<%- projects[i].link %>>GOTO &raquo;</a>
-  </div>
-<% } %> -->
     <ul class="image-slider-ul">
-      <% for(var i=0; i < projects.length; i++){ %>
+      <div id="test">
+      <!-- <% for(var i=0; i < projects.length; i++){ %> -->
           <li class="image-slider-li">
               <a href=<%- projects[i].link %> target="_blank">
                 <img class="image-slider-image" id=<%- projects[i].i %> src=<%- projects[i].picture %>>
               </a>
           </li>
-          <!-- <script type="text/javascript" src="javascript/imageSlider.js"></script> -->
-          <!-- <script lang="javascript">changeImage();</script> -->
-      <% } %>
+      <!-- <% } %> -->
+    </div>
     </ul>
 </div>

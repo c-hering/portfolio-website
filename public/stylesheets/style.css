@@ -10,8 +10,9 @@ _____                           _
  */
 #body{
   font-family: 'Nunito', sans-serif;
-  overflow-y:hidden;
+  /*overflow-y:hidden;*/
   color: white;
+  background-color: black
 }
 #preloader-wrapper{
   z-index: 100001;
@@ -22,7 +23,11 @@ _____                           _
   position: absolute;
   background: red;
 }
-
+#fourofourimg{
+  margin: 10% auto 10% auto;
+  display: block;
+  background-size: cover;
+}
 /*
   ___   _   _ ________  ___  ___ _____ _____ _____ _   _  _____
  / _ \ | \ | |_   _|  \/  | / _ \_   _|_   _|  _  | \ | |/  ___|
@@ -111,6 +116,7 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	transform: translateX(0px);
+  text-shadow: 3px 5px white;
 }
 
 #cmh{
@@ -125,6 +131,8 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
   height: 5%;
   /*background-color: rgba(0, 0, 0, 0.3);*/
   padding-bottom: 10px;
+  /*position: fixed;*/
+  z-index: 100001;
 }
 #nav-bar-list{
   display: inline;
@@ -135,10 +143,11 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
 .nav-item{
   margin-left: 10px;
   font-size: 30px;
-  color: white;
+  color: black;
   text-decoration: none;
   display: block;
   float: left;
+  /*background-color: rgb(251, 255, 45);*/
 }
 /*
  _   _
@@ -165,7 +174,7 @@ ___  ___ _____ _   _ _   _       ______  ___  ______
 #billboard{
   -moz-animation: image-animation .5s;
   -webkit-animation: image-animation .5s;
-  margin: 14% auto 15% auto;
+  margin: 14% auto 20% auto;
   display: block;
   height: 250px;
   width: 250px;
@@ -180,9 +189,14 @@ ____________ _____   ___ _____ _____ _____ _____
 \_|   \_| \_|\___/\____/\____/ \____/ \_/ \____/
 */
 .project-content-wrapper{
-  margin-top: 5%;
+  margin-top: 3%;
   text-align: center;
   width: 100%;
+}
+#test{
+  height: 600px;
+  width: auto;
+  overflow: hidden;
 }
 .image-slider-ul{
   position: relative;
@@ -190,17 +204,14 @@ ____________ _____   ___ _____ _____ _____ _____
 }
 .image-slider-li{
   max-width: 100%;
-  float: none;
 }
 .image-slider-image{
-  /*float: left;*/
-  height: 600px;
+  position: relative;
+  float: left;
+  height: 250px;
   width: auto;
-  border-bottom: 4px solid #B05F6D;
-  border-top: 4px solid #B05F6D;
-}
-#img5{
-  margin-bottom: 10%;
+  border-bottom: 4px solid #4cd4b0;
+  border-top: 4px solid #4cd4b0;
 }
 
 /*
@@ -226,7 +237,7 @@ ____________ _____   ___ _____ _____ _____ _____
 }
 #name-tag{
   text-align: center;
-  color: #FFC153;
+  color: black;
   font-size: 20px;
   font-weight: bold;
   margin: 10px;
@@ -237,11 +248,17 @@ ____________ _____   ___ _____ _____ _____ _____
   height: 20px;
 }
 #about-me-text{
-  border-top: 2px solid #FFC153;
+  font-weight: bold;
+  color: #4cd4b0;
+  /*color: white;*/
+  /*background-color: rgb(251, 255, 45);*/
+  background-color: rgba(0,0,0,.3);
+  /*border-top: 2px solid #FFC153;*/
   padding: 1% 2% 5% 2%;
   margin-top: 3%;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 20%;
 }
 /*
  _____ _____ _   _ _____ ___  _____ _____
@@ -293,7 +310,7 @@ ____________ _____   ___ _____ _____ _____ _____
 #msg-input{
   position: relative;
   width: 400px;
-  height: 200px;
+  height: 100px;
 }
 .contact-submit{
   padding: 5px;
