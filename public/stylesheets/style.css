@@ -8,6 +8,22 @@ _____                           _
  \____/\___|_| |_|\___|_|  \__,_|_|
 
  */
+ #main-wrapper{
+   position: absolute;
+   width: 1000px;
+   height: 2000px;
+   background: #3B3C3D;
+   border-radius: 5px;
+   display: block;
+   left: 50%;
+   top: 100%;
+   -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   transform: translateX(-50%);
+   margin-bottom: 10%;
+   box-shadow: 5px 5px 5px rgba(0,0,0,.3);
+ }
 #body{
   font-family: 'Nunito', sans-serif;
   /*overflow-y:hidden;*/
@@ -233,12 +249,13 @@ ____________ _____   ___ _____ _____ _____ _____
 }
 #name-tag-wrapper{
   width: 100%;
-  margin: 0;
+  margin-top: 5%;
 }
 #name-tag{
+  border-bottom: 5px white;
   text-align: center;
-  color: black;
-  font-size: 20px;
+  color: white;
+  font-size: 50px;
   font-weight: bold;
   margin: 10px;
 }
@@ -252,10 +269,10 @@ ____________ _____   ___ _____ _____ _____ _____
   color: #4cd4b0;
   /*color: white;*/
   /*background-color: rgb(251, 255, 45);*/
-  background-color: rgba(0,0,0,.3);
+  /*background-color: rgba(0,0,0,.3);*/
   /*border-top: 2px solid #FFC153;*/
-  padding: 1% 2% 5% 2%;
-  margin-top: 3%;
+  padding: 1% 2% 2% 2%;
+  margin-top: 1%;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 20%;
